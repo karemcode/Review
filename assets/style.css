@@ -1,0 +1,480 @@
+/* Adding google font-style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* Adding general style in style.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+/* Added variables to define common styles */
+:root {
+    --font-weight-bold: 800;
+    --font-weight-normal: 400;
+    --font-size-h1: 3.6rem;
+    --font-size-h2: 2.4rem;
+    --font-size-p: 1.8rem;
+  }
+
+/* Added style to anchor tag in style.css */
+a{
+
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: azure;
+
+}
+
+
+  /* Apply styles to common elements */
+  h1, h2, p {
+    margin: 1.6rem 0;
+  }
+  
+  /* Added Specific styles for each element using variables */
+  h1 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h1);
+  }
+  
+  h2 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h2);
+  }
+  
+  p {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-p);
+  }
+  
+
+
+/* Added style to img */
+
+
+img{
+
+    width: 100%;
+}
+
+.row{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+/* Added style to header in style.css */
+
+header{
+
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(52, 152, 219, 0.7), rgba(172, 109, 102, 0.7)), url('images/customer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: azure;
+}
+
+/* Added style to logo in style.css */
+
+
+.logo h1{
+
+  font-size: 3.2rem;
+  color: azure;
+  margin: 0;
+}
+
+/* Added style and flex-box to nav in style.css */
+
+nav{
+  padding: 2% 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav box-icon{
+  display: none;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 2.5rem;
+  border: 3px solid rgb(8, 233, 233);
+  
+}
+
+nav ul li a:hover{
+  color: greenyellow;
+  transition: .3s ease-in-out;
+  
+}
+
+/* Added style to header-content in style.css */
+
+.header-content{
+  width: 50%;
+  position: relative;
+  top: 16%;
+  left: 8%;
+
+}
+
+form{
+  margin: 2.4rem 0;
+}
+
+input{
+  font-size: 1.8rem;
+}
+
+input[type=text],
+input[type=email]{
+  width: 40%;
+  padding: 5px 20px;
+  margin: 1.2rem 0;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+input[type=submit]{
+
+  width: 50%;
+  background-color: aliceblue;
+  color:#046bc6;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+input::placeholder{
+  font-size: 1.3rem;
+}
+
+/* About Section */
+
+.about{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.about-left,
+.about-middle,
+.about-right{
+
+  flex-basis: 30%;
+  padding: 1.6rem;
+
+}
+
+
+.about2{
+  background-color: orange;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  
+ 
+}
+
+.about2-left{
+  flex-basis: 50%;
+
+ 
+}
+
+ .card{
+ margin: 20px;
+
+ 
+}
+ 
+.about .card{
+
+  padding: 3rem 8rem;
+  color: rgb(232, 209, 232);
+  background-color: azure;
+  margin: 1.6rem;
+}
+
+
+/* process Section */
+
+.process .row{
+  justify-content: center;
+  margin: 0 auto;
+ 
+ 
+}
+
+.process-content{
+  margin-top: 100px;
+border: 2px solid blue;
+
+}
+
+.box1,
+.box2,
+.box3{
+  padding: 1.8rem;
+}
+ 
+.process .box2{
+  text-align: center;
+}
+
+.process .box3{
+  text-align: right;
+}
+ 
+
+/* Testimony */
+
+
+.testimony{
+ 
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  
+ 
+
+}
+
+.testimony .test{
+  background-color: rgb(0, 183, 255);
+  padding: 4rem 8rem;
+  margin: 0 1rem;
+}
+
+.testimony .image{
+  height: 80px;
+  width: 80px;
+}
+
+.testimony .img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* Contact section */
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: skyblue;
+  
+}
+
+.row {
+  margin: 10px;
+
+}
+
+h1 {
+  font-size: 24px; /* Make the heading bigger */
+}
+
+form {
+text-align: center;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 30px;
+  
+ 
+}
+
+textarea[placeholder] {
+   
+  font-size: 1.5rem;
+  height: 100px;
+
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Change the button color on hover */
+}
+ 
+/* Footer */
+
+footer{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(0, 183, 255);
+}
+
+
+/* Added media query to navbar in style.css */
+
+ @media only screen and (min-width: 250px) and (max-width: 980px) {
+
+
+  header{
+    width: 100%;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .click_menu{
+    background-color: #0056b3;
+    margin-top: 1rem;
+  }
+
+header{
+
+  height: 100vh;
+
+  overflow: hidden;
+  height: 100vh;
+  padding-bottom: 67rem;
+  text-align: center;
+}
+ 
+  .row{
+   flex-direction: column;
+
+  }
+
+  .header-content{
+
+    width: 100%;
+    top:50%;
+  /*   left: 0; */
+   /*  text-align: center; */
+    /* padding: 0 8px; */
+    transform: translateY(-50%);
+    
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=submit]
+  {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .process-content{
+    margin-top: 20px;
+  }
+
+  .process .box1,
+  .process .box2,
+  .process .box3{
+    text-align: center;
+  }
+
+  .testimony .test{
+    margin: 1.6rem 0;
+  }
+
+
+  nav{
+    flex-direction: column;
+    position: relative;
+  }
+
+  nav box-icon{
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 32px;
+  }
+
+  nav ul{
+    background: rgb(8, 233, 233);
+    display: none;
+  }
+
+  .showmenu{
+    display: block;
+  }
+
+  nav ul li{
+    display: block;
+    padding: 2% 0;
+  }
+
+  nav ul li a{
+    color: azure;
+  }
+
+  .contact{
+
+    display: flex; 
+    flex-direction: column;
+    width: 100vw;
+     
+   
+  }
+
+  footer{
+   
+   display: inline-block;
+  font: 10px;
+  padding: 5px;
+  text-align: center;
+  flex-direction: column;
+  width: 100vw;
+
+    
+  }
+} 
+
+
+
